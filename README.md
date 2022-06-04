@@ -7,8 +7,7 @@
  - `find_last_orf.py`  Find genes that are aligned to unannotated regions in their outgroup species
  - `check_homologs.py`   Exclude genes that are aligned to unannotated regions, but also have homologs in other chromosome regions in outgroup species.
  - `extract_raw_hit.py`  Extract raw hits from aggregated bed files
- - `extract_alnscore_genewise.py`  Extract spliced alignment scores
- - 
+ - `extract_alnscore_genewise.py`  Extract spliced alignment scores and get final de novo gene candidates
 
 ## 2. trRosetta
  - `build_MSA.py`  To search through different protein sequence database and generate multiple sequence alignments (MSA).
