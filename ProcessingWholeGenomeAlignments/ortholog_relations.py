@@ -299,6 +299,7 @@ class OrthologsMap():
                 for s in self.species:
                     ncopy[s] = 0
 
+        f = open("groups.txt","w")
         for grp in groups_rm:
             newgrp = [s for s in grp]
             n_grp  = len(grp)
@@ -318,18 +319,15 @@ class OrthologsMap():
             
             var = [ncopy[s] for s in self.species]
             #if len(set(var)) > 1 and max(var)>1:
-            print(" ".join(newgrp))
+            #print(" ".join(newgrp))
+            f.write("%s\n"%("".join(newgrp)))
                     
             for s in self.species:
                 ncopy[s] = 0
 
-
-
+        f.close()
         #f = open("dmel_orthoMap.txt","w")
         #f.write("Gene\tParalogs\tOrthologs\n")
-
-
-
 
         #print(self.orthoMap["dmel|FBgn0287183"].paralogs)
         #f.close()
